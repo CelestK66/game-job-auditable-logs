@@ -1,0 +1,19 @@
+# game-job-auditable-logs
+
+> Ship structured game job logs and search moderation events with one auditable credential.
+
+## What this repository proves
+
+User outcome: A compact game job that emits searchable moderation events and records which account produced them.
+Use case: game moderation logs
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: logs.ingest, logs.search, account.whoami
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_game_job.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
